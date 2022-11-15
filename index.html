@@ -1,4 +1,11 @@
+<div id="err"></div>
 <script>
-console.log("if you see this hi.")
-location.href = "https://github.com/DogSystemCompany/dogsystem-us"
+let message = prompt("A to open vscode, B to open github repo.")
+if (message == "a" || message == "A") {
+  location.href = "https://vscode.dev/github/DogSystemCompany/dogsystem-us"
+} else if (message == "b" || message == "B") {
+  location.href = "https://github.com/DogSystemCompany/dogsystem-us"
+} else {
+  document.getElementById("err").innerHTML = "Not a option... Refresh to try again."
+}
 </script>
